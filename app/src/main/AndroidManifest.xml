@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/soulapp_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/soulapp_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SoulApp"
+        tools:targetApi="31" >
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="pmf.android.soulapp.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+
+        <activity
+            android:name="pmf.android.soulapp.ui.MainActivity"
+            android:label="@string/app_name"
+            android:exported = "true"
+            android:theme="@style/Theme.SoulApp">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name="pmf.android.soulapp.ui.MusicActivity"
+            android:label="@string/music" />
+
+
+        <activity
+            android:name="pmf.android.soulapp.ui.SubdirActivity"
+            android:label="@string/genre" />
+
+        <service
+            android:name="pmf.android.soulapp.ui.MusicService"
+            android:exported="false"
+            android:foregroundServiceType="mediaPlayback" />
+
+        <activity
+            android:name="pmf.android.soulapp.ui.MessageActivity"
+            android:label="@string/message" />
+
+        <activity
+            android:name="pmf.android.soulapp.ui.JournalActivity"
+            android:label="@string/journal" />
+
+        <activity
+            android:name="pmf.android.soulapp.ui.JournalListActivity"
+            android:label="@string/journal" />
+
+        <activity
+            android:name="pmf.android.soulapp.ui.FoodQueryActivity"
+            android:label="@string/food_label" />
+
+        <activity
+            android:name="pmf.android.soulapp.ui.FoodFactsActivity"
+            android:label="@string/food_label" />
+
+    </application>
+
+</manifest>

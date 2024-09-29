@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@color/cream">
+
+    <!-- Adjustviewbounds sluzi za odrzavanje proporcija -->
+
+    <ImageView
+        android:id="@+id/journalImageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:background="@drawable/add_photo"
+        android:backgroundTint="@android:color/darker_gray"
+        android:minHeight="300dp"
+        android:scaleType="fitCenter" />
+
+    <EditText
+        android:id="@+id/journalNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:textColor="@color/black"
+        android:hint="Write your note here" />
+
+    <Button
+        android:id="@+id/saveJournalButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Save Note" />
+
+</LinearLayout>

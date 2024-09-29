@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">SoulApp</string>
+    <string name="music">Music Player</string>
+    <string name="query">Nutrition Facts</string>
+    <string name="journal">Personal Journal</string>
+    <string name="message">Daily Motivation</string>
+    <string name="genre">Choose Genre</string>
+    <string name="first_quote">Believe you can and you’re halfway there.</string>
+    <string name="no_item_selected">no item selected</string>
+    <string name="no_input">no input</string>
+    <string name="saved">saved to journal</string>
+    <string name="search">Search</string>
+    <string name="write_note">Write your note here…</string>
+    <string name="save_note">Save Note</string>
+    <string name="no_conn">no connection</string>
+    <string name="music_service">Music Service</string>
+    <string name="running">Service is running</string>
+    <string name="playing">Playing: </string>
+
+    <string name="food_name">Food</string>
+    <string name="serving_qty">Serving Quantity</string>
+    <string name="serving_unit">Serving Unit</string>
+    <string name="calories">Calories</string>
+    <string name="grams">Grams Per Serving</string>
+    <string name="tot_fat">Total Fat</string>
+    <string name="sat_fat">Saturated Fat</string>
+    <string name="cholesterol">Cholesterol</string>
+    <string name="sodium">Sodium</string>
+    <string name="tot_carbohydrate">Total Carbohydrates</string>
+    <string name="fiber">Fiber</string>
+    <string name="sugars">Sugars</string>
+    <string name="protein">Protein</string>
+    <string name="g">g</string>
+    <string name="kcal">kCal</string>
+    <string name="mg">mg</string>
+
+    <string name="food_query">Enter food name…</string>
+    <string name="food_label">Food Nutrition Facts</string>
+
+</resources>

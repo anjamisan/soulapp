@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_green">
+
+    <!-- Image to tear -->
+    <ImageView
+        android:id="@+id/cookie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/whole"
+        android:layout_gravity="center" />
+
+    <!-- Message background -->
+    <TextView
+        android:id="@+id/messageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:text="@string/first_quote"
+        android:textSize="24sp"
+        android:textColor="@android:color/black"
+        android:background="@android:color/white"
+        android:padding="6dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:layout_margin="15dp"
+        android:visibility="gone"/> <!-- na pocetku sakrivena -->
+
+</FrameLayout>

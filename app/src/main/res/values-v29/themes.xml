@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.SoulApp" parent="Theme.MaterialComponents.Light">
+
+        <item name="android:forceDarkAllowed">false</item>
+        <item name="colorPrimary">@color/purple</item> <!-- glavna sema -->
+        <item name="colorPrimaryVariant">@color/dark_purple</item> <!-- tamnija varijanta -->
+        <item name="colorOnPrimary">@color/cream</item> <!-- tekst na toj semi -->
+
+        <item name="colorSecondary">@color/medium_green</item> <!-- sporedna sema -->
+        <item name="colorSecondaryVariant">@color/dark_green</item>
+        <item name="colorOnSecondary">@color/cream</item>
+
+        <item name="android:statusBarColor">@color/dark_purple</item>
+        <item name="android:textColorPrimary">?attr/colorOnPrimary</item>
+
+    </style>
+
+    <style name="ActionBarStyle" parent="Widget.AppCompat.ActionBar.Solid">
+        <item name="android:textColorPrimary">?attr/colorOnPrimary</item>
+        <item name="android:titleTextColor">@color/cream</item>
+        <item name="android:subtitleTextColor">@color/cream</item>
+    </style>
+</resources>
+

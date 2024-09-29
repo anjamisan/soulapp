@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:theme="@style/Theme.SoulApp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@color/black"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/food_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/food_name"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:padding="8dp"
+        android:background="@drawable/item_not_selected"
+        app:layout_constraintTop_toTopOf="@id/food_image"
+        app:layout_constraintStart_toEndOf="@id/food_image"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/serving_qty"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_not_selected"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/food_name"
+        app:layout_constraintTop_toBottomOf="@id/food_name" />
+
+    <TextView
+        android:id="@+id/serving_unit"
+        android:textColor="@color/black"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:padding="8dp"
+        android:background="@drawable/item_not_selected"
+        app:layout_constraintTop_toBottomOf="@id/food_name"
+        app:layout_constraintStart_toEndOf="@id/serving_qty"
+        android:layout_marginStart="16dp" />
+
+    <!-- prvi -->
+    <TextView
+        android:id="@+id/grams"
+        android:textColor="@color/black"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:padding="8dp"
+        android:background="@drawable/item_not_selected"
+        app:layout_constraintTop_toBottomOf="@id/serving_unit"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/calories"
+        android:textColor="@color/black"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:padding="8dp"
+        android:background="@drawable/item_not_selected"
+        app:layout_constraintTop_toBottomOf="@id/serving_unit"
+        app:layout_constraintStart_toEndOf="@id/grams"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/tot_fat"
+        android:textColor="@color/black"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:padding="8dp"
+        android:background="@drawable/item_not_selected"
+        app:layout_constraintTop_toBottomOf="@id/serving_unit"
+        app:layout_constraintStart_toEndOf="@id/calories"
+        android:layout_marginStart="16dp" />
+
+    <!-- drugi -->
+    <TextView
+        android:id="@+id/sat_fat"
+        android:textColor="@color/black"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:padding="8dp"
+        android:background="@drawable/item_not_selected"
+        app:layout_constraintTop_toBottomOf="@id/grams"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/cholesterol"
+        android:textColor="@color/black"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:padding="8dp"
+        android:background="@drawable/item_not_selected"
+        app:layout_constraintTop_toBottomOf="@id/grams"
+        app:layout_constraintStart_toEndOf="@id/sat_fat"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/sodium"
+        android:textColor="@color/black"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:padding="8dp"
+        android:background="@drawable/item_not_selected"
+        app:layout_constraintTop_toBottomOf="@id/grams"
+        app:layout_constraintStart_toEndOf="@id/cholesterol"
+        android:layout_marginStart="16dp" />
+
+    <!-- treci -->
+    <TextView
+        android:id="@+id/tot_carbohydrate"
+        android:textColor="@color/black"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:padding="8dp"
+        android:background="@drawable/item_not_selected"
+        app:layout_constraintTop_toBottomOf="@id/sat_fat"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/fiber"
+        android:textColor="@color/black"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:padding="8dp"
+        android:background="@drawable/item_not_selected"
+        app:layout_constraintTop_toBottomOf="@id/sat_fat"
+        app:layout_constraintStart_toEndOf="@id/tot_carbohydrate"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/sugars"
+        android:textColor="@color/black"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:padding="8dp"
+        android:background="@drawable/item_not_selected"
+        app:layout_constraintTop_toBottomOf="@id/sat_fat"
+        app:layout_constraintStart_toEndOf="@id/fiber"
+        android:layout_marginStart="16dp" />
+
+    <!-- Fourth row of two TextViews -->
+    <TextView
+        android:id="@+id/protein"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:padding="8dp"
+        android:background="@drawable/item_not_selected"
+        app:layout_constraintTop_toBottomOf="@id/tot_carbohydrate"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
